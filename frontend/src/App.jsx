@@ -20,7 +20,7 @@ const currentSourceRef = useRef(null);
   audioCtxRef.current.resume();
 });
 
-    const ws = new WebSocket("wss://https://realtime-ai-chat-bv8u.onrender.com/ws");
+    const ws = new WebSocket("wss://realtime-ai-chat-bv8u.onrender.com/ws");
 
     ws.onopen = () => {
       console.log("Connected");
