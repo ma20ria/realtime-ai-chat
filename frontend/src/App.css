@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main card */
+
+.chat-shell {
+  width: 420px;
+  height: 80vh;
+  background: #141414;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0,0,0,.6);
+  overflow: hidden;
+}
+
+/* Header */
+
+.chat-header {
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #eee;
+  border-bottom: 1px solid #222;
+}
+
+/* Messages */
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.bubble {
+  max-width: 90%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.bubble.ai {
+  background: #1f1f1f;
+  color: #eaeaea;
+}
+
+/* Input bar */
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid #222;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: white;
+  font-size: 14px;
+}
+
+.chat-input input::placeholder {
+  color: #888;
+}
+
+.chat-input button {
+  padding: 0 18px;
+  border-radius: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #4338ca;
+}
